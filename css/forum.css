@@ -1,0 +1,39 @@
+body{
+    background-image: url(../img/hero-img.jpg);
+    background-clip: border-box;
+    height: 100%;
+    font-family: 'Dune Rise','Michrome',sans-serif;
+    overflow: hidden;
+}
+.duyuru{
+    display: flex;
+    position: absolute;
+    top: 45%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    left: 50
+}
+.container{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.head, .para{
+    color: white;
+}
+.para{
+    font-size: 24px;
+    max-width: 750px;
+    text-align: center;
+    font-family: 'Michrome';
+}
+a{
+    color: white;
+}
