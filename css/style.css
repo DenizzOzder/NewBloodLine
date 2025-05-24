@@ -19,7 +19,7 @@ a{
 }
 header{
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
@@ -122,6 +122,7 @@ main .ad .container .adContent{
 }
 main .ad .container .adContent .ad-head{
     font-family: 'Michroma';
+    text-align: center;
     font-size: 36px;
     color: #C2B280;
     margin: 30px;
@@ -198,7 +199,7 @@ main .card-nav .container .card-list .card-item .card-link .overlay{
 }
 main .card-nav .container .card-list .card-item .card-link img{
     display: block;
-    width: 100%;
+    width: 355px;
     height: 900px;
 }
 main .card-nav .container .card-list .card-item .card-link:hover .card-content{
@@ -222,18 +223,23 @@ main .forum .container .forum-content .content-head{
     text-align: center;
     font-size: 36px;
     color: white;
+    text-align: center;
     transition: color 0.7s ease;
 }
 main .forum .container .forum-content .content-para{
     font-family: 'Michrome';
     font-size: 32px;
     color: white;
+    text-align: center;
 }
 main .forum .container .forum-content .content-head:hover{
     color: #C2B280;
 }
 footer{
     background-color: #000000;
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
 footer .container{
     display: flex;
@@ -254,4 +260,46 @@ footer .container .footer-content .footer-para{
     color:#C2B280;
     font-family: 'Michrome';
     font-size: 24px;
+}
+footer .footer-date{
+    color: white;
+    display: block;
+    text-align: end;
+    font-size: 12px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    main .card-nav .container .card-list .card-item .card-link img{
+    display: block;
+    width: 70px;
+    height: 250px;
+}
+header .container .navbar{
+    display: none;
+}
+html{
+    overflow-x: hidden;
+}
+main .ad .container .adContent .ad-head{
+    font-size: 18px;
+}
+footer .container .footer-content .footer-head{
+    font-size: 14px;
+}
+footer .container .footer-content .footer-para{
+
+    font-size: 12px;
+}
+footer .footer-date{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+main .forum .container .forum-content .content-head{
+    font-size: 18px;
+}
+main .forum .container .forum-content .content-para{
+    font-size: 16px;
+}
 }
