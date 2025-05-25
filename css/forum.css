@@ -4,6 +4,7 @@ body{
     height: 100%;
     font-family: 'Dune Rise','Michrome',sans-serif;
     overflow: hidden;
+    background-size: 100%;
 }
 .duyuru{
     display: flex;
